@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rita Sun's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Rita Sun</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a> </li>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#contact">Contact</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Rita Sun</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a> </li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a> </li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a> </li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Rita Sun profile picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Rita Sun</h1>
+            <p class="section__text__p2">Aspiring UX/UI Designer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/rita-sun-resume.pdf')">
+                    Download Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/in/rita-sun'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpg" alt="profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon"/>
+                        <h1>Education</h1>
+                        <p>Mechatronics Engineering Student<br>University of Waterloo<br>2022 - Present<br>GPA: 4.0</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hi! Nice to meet you. I'm Rita. <br> I'm from Vaughan, Ontario and currently attend the University of Waterloo. Ever since I was young, visual arts has been a passion of mine. I'm eager to break into the field of UX/UI design and am confident in my ability to bring new, creative ideas to the table! <br><br><br></p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Check Out My</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="project 1" class="project-img"/>
+                    </div>
+                    <h2 class="project-sub-title project-title">ZARA Redesign</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='project1.html'">
+                            Check it out!
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="project 2" class="project-img"/>
+                    </div>
+                    <h2 class="project-sub-title project-title">In the Works</h2>
+                    <div class="btn-container">
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="project 2" class="project-img"/>
+                    </div>
+                    <h2 class="project-sub-title project-title">In the Works</h2>
+                    <div class="btn-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:r89sun@uwaterloo.ca">r89sun@uwaterloo.ca</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/rita-sun">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#projects">Projects</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
