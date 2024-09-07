@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Wildfires Website Mock-up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><a href="index.html" class="logo-btn">Rita Sun</a></div>
+        <div>
+            <button class="back-btn" onclick="location.href='index.html#projects'">
+                <div class="back-btn-icon">
+                </div>
+            </button>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="index.html" class="logo-btn">Rita Sun</a></div>
+        <div>
+            <button class="back-btn" onclick="location.href='index.html'">
+                <div class="back-btn-icon">
+                </div>
+            </button>
+        </div>
+    </nav>
+    <section id="project-title">
+        <p class="section__text__p1">I created a</p>
+        <h1 class="title">Canadian Wildfires Website Mock-up</h1>
+        <p class="section__text__p1"> using Framer. <br><br><br><br></p></div>
+    </section>
+    <section id="project-section">
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="project__pic-container">
+                    <img src="./assets/project2-pic.png" alt="project picture" class="project-pic"/>
+                </div>
+                <h1 class="project-heading"><a href="canadianwildfires2024.framer.website" target="_blank">Click here to check it out!</a></h1>
+            </div>
+        </div>
+    </section>
+    <section id="project-section">
+        <h1 class="project-heading">About</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>The purpose of this website is to bring awareness to the severity of Canadian wildfires. It draws users in to learn about why Canada’s wildfire seasons are getting worse every year and the impact fires have.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project-section">
+        <h1 class="project-heading">Design Choices</h1> 
+        <div class="section-container">
+            <div class="about-details-container">
+                <h3>The Colours</h3>
+                    <div class="text-container">
+                        <p> The colours were chosen to be eye-catching, but also on theme with the ‘Wildfire’ topic. The gray colour is used to incite a dark feeling from the user to capture the devastation of these wildfires. Furthermore, a dark background would contrast with brighter colours to make them pop more.
+                            To stay on theme with the fires, I took inspiration from the background video to have a red-orange accent colour to draw attention to certain words or buttons.</p>
+                    </div>      
+                </div>
+        </div>
+        <br>
+        <div class="section-container">
+            <div class="about-details-container">
+                <h3>The Background Video</h3>
+                    <div class="text-container">
+                        <p> A video of a blazing wildfire was chosen for the hero section background to immediately catch the user's attention and inform them of what the website is about. The video itself adds a lot of shock value, which can pique the user’s interest. </p>
+                    </div>
+        </div>
+        <div class="section-container">
+            <div class="about-details-container">
+                <h3>Ticker</h3>
+                    <div class="text-container">
+                        <p> The ticker was chosen as the interactive element to display facts to the user. Since it rotates through tiles automatically, it spoon-feeds the information to the user without them having to cycle through the information themselves. Additionally, since each statistic is quick to read, the ticker suited the use case well. </p>
+                    </div>
+                </div>
+        </div>
+        <div class="section-container">
+            <div class="about-details-container">
+                <h3>Sharp Corners</h3>
+                    <div class="text-container">
+                        <p> I used sharp corners as opposed to round corners to create a more professional and cold feel, rather than a more playful one. </p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section id="project-section">
+        <h1 class="project-heading">Responsive Design</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <br>
+                <div class="text-container">
+                    <p>I implemented responsive design across the specified breakpoints by sizing elements/containers using a relative scale rather than a fixed scale. This ensures that as the screen size changes, content will adjust accordingly and more importantly, no content will be cut off.</p>
+                    <br>
+                    <p>I also specified minimum and maximum values for certain text boxes and images so they wouldn’t grow or shrink too much when the size of the page was changed. </p>
+                    <br>
+                    <p>Specifically for the layout of the link section on a phone screen, I created a variation of the link section component to make it more mobile-friendly. Rather than having all the elements side by side and left-justified, I decided to center everything to fit the smaller space while keeping the images large enough.</p>
+                    <br>
+                    <p>Furthermore, I made sure to consistently check the functionality of the website throughout my design process to ensure it was behaving the way it was supposed to.</p> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project-section">
+        <h1 class="project-heading">Variables</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <br>
+                <div class="text-container">
+                    <p>For the ticker, I made a component for the media being cycled through. The component follows a similar structure for each tile, with variable properties of a background image, number, and province/territory name. Since each of these properties was the only one that varied from each tile, turning them into variables made it easy to change the contents from the main menu, without having to go into the component to edit it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project-section">
+        <h1 class="project-heading">Ticker</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <br>
+                <div class="text-container">
+                    <p>After deciding to use a ticker, I knew I wanted to cycle through Canadian wildfire statistics. Creating the tiles for the statistics was a struggle, as I initially was only going to use one variant of my tile component. This created spacing issues when names of longer provinces/territories had to wrap around, and it didn’t look great. My solution was to create another variant where I directly customized the look of the text on the tile to accommodate longer names.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div>
+                <button class="back-btn" onclick="location.href='index.html#projects'">
+                    <div class="back-btn-icon">
+                    </div>
+                </button>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
